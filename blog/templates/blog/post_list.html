@@ -21,7 +21,15 @@
 	<div class='content'>
 		<h1>Greetings!</h1>
 		<p><b>You're welcome to my experimental blog:)</b></p>
-		<p>See updates soon!</p>
+		<div>
+			{% for post in posts %}
+				<div>
+					<h1><a href=''>{{post.title}}</a></h1>
+					<p>{{post.text}}</p>
+					<p>Published: {{post.published_date}} </p>
+				</div>
+			{% endfor %}
+		</div>
 	</div>
   </body>
 </html>
