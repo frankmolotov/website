@@ -1,0 +1,108 @@
+body{
+	background-color:#66ffff;
+}
+.header{
+	padding:10px;
+	height:100px;
+}
+a.headerbutton{
+  display:inline-block;
+  text-decoration:none;
+  width: 200px;
+  height: 50px;
+  padding: 20px 45px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 22px;
+  border: 3px solid black;
+  color: black;
+  line-height: 64px;
+  background: none;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  box-shadow: 0 0 5px #222;
+  border-radius: 70px;
+  -webkit-animation: over 6s infinite;
+  animation: over 6s infinite;	
+  line-height:5px;
+}
+h1.greetings{
+	color : black;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	text-align:center;
+	padding:10px 0px 0px 30px;
+	font-family: Arial Black, Charcoal, sans-serif;
+	letter-spacing: 5px;
+	font-size:60px;
+	margin:0;
+}
+
+p.greetings{
+	margin: 0px 60px 0px 60px;
+	font-family: 'Lobster';
+}
+.header-buttons-block{
+	display:inline-block;
+	float:right;
+}
+.header-buttons-block:first-child{
+	float:left;
+}
+.header-buttons-block:nth-child(2){
+	float:left;
+}
+.header-element{
+	padding : 20px 30px;
+	display:inline-block;
+}
+ul{
+	padding-left : 0;
+	text-align : center;
+}
+hr.end-of-post{
+	border-top: 2px dotted black;
+}
+hr.end-header{
+	border-top: 3px solid black;
+}
+li.intro-video{
+	margin:auto;
+	display:inline-block;
+}
+h1.post-title{
+	color : black;
+	font-family: Impact, fantasy;
+	font-size:30px;
+}
+a.title-post{
+	color:black;
+}
+div.post{
+	text-align: center;
+}
+p.post-text{
+	font-family:Lucida, Arial, sans-serif;
+	font-weight:normal;
+	font-size:20px;
+}
+p.post-pub{
+	font-weight:bolder;
+	font-size:12px;
+	text-align:right;
+}
+li.footer-element{
+	display: inline-block;
+}
+a.footerbutton{
+	color:black;
+}
+p.last-word{
+	text-align: center;
+}

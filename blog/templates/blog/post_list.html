@@ -1,35 +1,60 @@
-<!DOCTYPE html>
+{% load staticfiles %}
 <html>
   <head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     <title>Experimental blog</title>
   </head>
   <body>
     <div class='header'>
-		<ul>
-			<li class = 'header-element'>
-				<a class = 'headerbutton' href = '/index'>Home</a>
-			</li>
-			<li class = 'header-element'>
-				<a class = 'headerbutton' href = '/signup'>Sign up</a>
-			</li>
-			<li class = 'header-element'>
-				<a class = 'headerbutton' href = '/login'>Sign in</a>
-			</li>
-		</ul>
+    	<div class='header-buttons-block'>
+    		<img src="{% static 'img/logoimg.jpg'%}">
+    	</div>
+    	<div class='header-buttons-block'>
+    		<h1 class='greetings'>BERLOGA</h1>
+    	</div>
+    	<div class='header-buttons-block'>
+			<ul>
+				<li class = 'header-element'>
+					<a class = 'headerbutton' href = '/index'>Home</a>
+				</li>
+				<li class = 'header-element'>
+					<a class = 'headerbutton' href = '/signup'>Sign up</a>
+				</li>
+				<li class = 'header-element'>
+					<a class = 'headerbutton' href = '/login'>Sign in</a>
+				</li>
+			</ul>
+		</div>
 	</div>
-	<hr>
+	<hr class='end-header'>
 	<div class='content'>
-		<h1>Greetings!</h1>
-		<p><b>You're welcome to my experimental blog:)</b></p>
+		<div class='videos'>
+			<ul>
+				<li class='intro-video'><iframe width="560" height="315" src="https://www.youtube.com/embed/2iD3V144vw4" frameborder="0" allowfullscreen></iframe></li>
+				<li class='intro-video'><iframe width="560" height="315" src="https://www.youtube.com/embed/L7rtik7r5-4" frameborder="0" allowfullscreen></iframe></li>
+			</ul>
+		</div>
+		<hr class='end-header'>
 		<div>
 			{% for post in posts %}
-				<div>
-					<h1><a href=''>{{post.title}}</a></h1>
-					<p>{{post.text}}</p>
-					<p>Published: {{post.published_date}} </p>
+				<div class='post'>
+					<h1 class='post-title'><a class='title-post' href=''>{{post.title}}</a></h1>
+					<p class='post-text'>{{post.text}}</p>
+					<p class='post-pub'>Published: {{post.published_date}} </p>
+					<hr class='end-of-post'>
 				</div>
 			{% endfor %}
 		</div>
+	</div>
+	<div class='footer'>
+		<ul>
+			<li class='footer-element'><a class = 'footerbutton' href = ''>About</a></li>
+			<li class='footer-element'><a class = 'footerbutton' href = ''>Help</a></li>
+			<li class='footer-element'><a class = 'footerbutton' href = ''>Contacts</a></li>
+		</ul>
+		<p class='last-word'>BERLOGA © 2016 </p>
 	</div>
   </body>
 </html>
