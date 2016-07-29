@@ -1,0 +1,47 @@
+{% load staticfiles %}
+<html>
+<head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <title>Experimental blog</title>
+</head>
+<body>
+<div class='header'>
+    <div class='header-buttons-block'>
+        <img src="{% static 'img/logoimg.jpg' %}">
+    </div>
+    <div class='header-buttons-block'>
+        <h1 class='greetings'>BERLOGA</h1>
+    </div>
+    <div class='header-buttons-block'>
+        <ul>
+            <li class='header-element'>
+                <a class='headerbutton' href='/'>Home</a>
+            </li>
+            <li class='header-element'>
+                <a class='headerbutton' href='/signup'>Sign up</a>
+            </li>
+            <li class='header-element'>
+                <a class='headerbutton' href='/login'>Sign in</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<hr class='end-header'>
+<div class='content'>
+
+    {% block content %}
+
+    {% endblock %}
+</div>
+<div class='footer'>
+    <ul>
+        <li class='footer-element'><a class='footerbutton' href=''>About</a></li>
+        <li class='footer-element'><a class='footerbutton' href=''>Help</a></li>
+        <li class='footer-element'><a class='footerbutton' href=''>Contacts</a></li>
+    </ul>
+    <p class='last-word'>BERLOGA © 2016 </p>
+</div>
+</body>
+</html>

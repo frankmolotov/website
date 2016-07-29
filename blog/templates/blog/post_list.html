@@ -1,60 +1,32 @@
-{% load staticfiles %}
-<html>
-  <head>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    <title>Experimental blog</title>
-  </head>
-  <body>
-    <div class='header'>
-    	<div class='header-buttons-block'>
-    		<img src="{% static 'img/logoimg.jpg'%}">
-    	</div>
-    	<div class='header-buttons-block'>
-    		<h1 class='greetings'>BERLOGA</h1>
-    	</div>
-    	<div class='header-buttons-block'>
-			<ul>
-				<li class = 'header-element'>
-					<a class = 'headerbutton' href = '/index'>Home</a>
-				</li>
-				<li class = 'header-element'>
-					<a class = 'headerbutton' href = '/signup'>Sign up</a>
-				</li>
-				<li class = 'header-element'>
-					<a class = 'headerbutton' href = '/login'>Sign in</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<hr class='end-header'>
-	<div class='content'>
-		<div class='videos'>
-			<ul>
-				<li class='intro-video'><iframe width="560" height="315" src="https://www.youtube.com/embed/2iD3V144vw4" frameborder="0" allowfullscreen></iframe></li>
-				<li class='intro-video'><iframe width="560" height="315" src="https://www.youtube.com/embed/L7rtik7r5-4" frameborder="0" allowfullscreen></iframe></li>
-			</ul>
-		</div>
-		<hr class='end-header'>
-		<div>
-			{% for post in posts %}
-				<div class='post'>
-					<h1 class='post-title'><a class='title-post' href=''>{{post.title}}</a></h1>
-					<p class='post-text'>{{post.text}}</p>
-					<p class='post-pub'>Published: {{post.published_date}} </p>
-					<hr class='end-of-post'>
-				</div>
-			{% endfor %}
-		</div>
-	</div>
-	<div class='footer'>
-		<ul>
-			<li class='footer-element'><a class = 'footerbutton' href = ''>About</a></li>
-			<li class='footer-element'><a class = 'footerbutton' href = ''>Help</a></li>
-			<li class='footer-element'><a class = 'footerbutton' href = ''>Contacts</a></li>
-		</ul>
-		<p class='last-word'>BERLOGA © 2016 </p>
-	</div>
-  </body>
-</html>
+{% extends 'blog/base.html' %}
+{% block content %}
+    <div class='videos'>
+        <ul>
+            <li class='intro-video'>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2iD3V144vw4" frameborder="0"
+                        allowfullscreen></iframe>
+            </li>
+            <li class='intro-video'>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/L7rtik7r5-4" frameborder="0"
+                        allowfullscreen></iframe>
+            </li>
+        </ul>
+    </div>
+    <div class="new-post">
+        <a href="{% url 'blog.views.post_new' %}" class="post-menu"><span class="glyphicon glyphicon-plus">Add Post</span></a>
+    </div>
+    <br>
+    <hr class='end-header'>
+    <div>
+        {% for post in posts %}
+            <div class='post'>
+                <h1 class='post-title'><a class='title-post'
+                                          href='{% url 'post_detail' pk=post.pk %}'>{{ post.title }}</a></h1>
+                <p class='post-text'>{{ post.text }}</p>
+                <p class='post-pub'>Published: {{ post.published_date }} </p>
+                <hr class='end-of-post'>
+            </div>
+        {% endfor %}
+    </div>
+    </div>
+{% endblock %}
