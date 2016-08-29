@@ -3,7 +3,7 @@ from django.utils import timezone
 #from .models import Post
 from .forms import PostForm, RegisterForm
 from django.http import HttpResponseRedirect
-import urllib
+from django.template import RequestContext
 
 
 '''def post_list(request):
@@ -54,4 +54,4 @@ def contact(request):
             return HttpResponseRedirect('/thanks/')
     else:
         form = RegisterForm()
-    return render(request, 'blog/base.html', {'form': form})
+    return render(request, 'blog/base.html', {'form': form}, context_instance=RequestContext(request))
