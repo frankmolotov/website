@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'captcha'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -52,7 +53,8 @@ MIDDLEWARE_CLASSES = (
 )
 
 ROOT_URLCONF = 'mysite.urls'
-
+RECAPTCHA_PUBLIC_KEY = '6LcWvCgTAAAAAGe6MLnvucEf0tC_uhsTFXdULSvt'
+RECAPTCHA_PRIVATE_KEY='6LcWvCgTAAAAAGgHysyYqOg9LK2K4u_NpkiPW_y4'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

@@ -1,47 +1,53 @@
 {% load staticfiles %}
 <html>
-<head>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    <title>Experimental blog</title>
-</head>
-<body>
-<div class='header'>
-    <div class='header-buttons-block'>
-        <img src="{% static 'img/logoimg.jpg' %}">
-    </div>
-    <div class='header-buttons-block'>
-        <h1 class='greetings'>BERLOGA</h1>
-    </div>
-    <div class='header-buttons-block'>
-        <ul>
-            <li class='header-element'>
-                <a class='headerbutton' href='/'>Home</a>
-            </li>
-            <li class='header-element'>
-                <a class='headerbutton' href='/signup'>Sign up</a>
-            </li>
-            <li class='header-element'>
-                <a class='headerbutton' href='/login'>Sign in</a>
-            </li>
-        </ul>
-    </div>
-</div>
-<hr class='end-header'>
-<div class='content'>
-
-    {% block content %}
-
-    {% endblock %}
-</div>
-<div class='footer'>
-    <ul>
-        <li class='footer-element'><a class='footerbutton' href=''>About</a></li>
-        <li class='footer-element'><a class='footerbutton' href=''>Help</a></li>
-        <li class='footer-element'><a class='footerbutton' href=''>Contacts</a></li>
-    </ul>
-    <p class='last-word'>BERLOGA © 2016 </p>
-</div>
-</body>
+    <head>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="../../static/css/blog.css">
+        <title>Experimental blog</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    </head>
+    <body>
+        <div class = "content">
+            <img class = "background" src="../../static/img/bckg2.jpeg" alt="">
+            <img class="logoimg" src="../../static/img/logoimg.png">
+            <div class="info-list">
+                <ul class="info">
+                    <li class='info-element'>Ein Treffen ist jederzeit möglich für unsere Vip Kunden</li>
+                    <li class='info-element'>Wir handeln gezielt und sicher für Sie</li>
+                    <li class='info-element'>Wir schließen Verträge</li>
+                    <li class='info-element'>Wir arbeiten mit europäischen Banken</li>
+                    <li class='info-element'>Wir bieten unseren Kunden einen Zinslosen Kredit an</li>
+                </ul>
+            </div>
+            <div class="timer">
+                <div>
+                    <ul class="timer-indicator">
+                        <li>Stunden</li>
+                        <li>Minuten</li>
+                        <li>Sekunden</li>
+                        </ul>
+                </div>
+                <div>
+                    <script src="../../static/css/timer.js"></script>
+                </div>
+            </div>
+            <form action="" method="POST" class="post-form">{% csrf_token %}
+                <p class="form-field-name">{{ form.first_name }}</p>
+                <p class="form-field-name">{{ form.last_name }}</p>
+                <p class="form-field-name">{{ form.email }}</p>
+                <p class="form-field-name">{{ form.phone_number }}</p>
+                <div class="g-recaptcha" data-sitekey="6LcWvCgTAAAAAGe6MLnvucEf0tC_uhsTFXdULSvt"></div>
+                <button type="submit" class="save btn btn-default">Save</button>
+            </form>
+        </div>
+        <div class='footer'>
+            <ul class="footer-elements">
+                <li class='footer-element'><a class='footerbutton' href=''>About</a></li>
+                <li class='footer-element'><a class='footerbutton' href=''>Help</a></li>
+                <li class='footer-element'><a class='footerbutton' href=''>Contacts</a></li>
+            </ul>
+        </div>
+    </body>
 </html>

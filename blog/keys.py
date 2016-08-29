@@ -1,0 +1,2 @@
+from recaptcha import RecaptchaClient
+recaptcha_client = RecaptchaClient('6LcWvCgTAAAAAGgHysyYqOg9LK2K4u_NpkiPW_y4', '6LcWvCgTAAAAAGe6MLnvucEf0tC_uhsTFXdULSvt')

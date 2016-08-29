@@ -1,13 +1,15 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Post
 from django.utils import timezone
-from .forms import PostForm
+#from .models import Post
+from .forms import PostForm, RegisterForm
+from django.http import HttpResponseRedirect
+import urllib
 
 
-def post_list(request):
+'''def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date').reverse()
     return render(request, 'blog/post_list.html', {'posts': posts})
-
+'''
 
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
@@ -41,3 +43,15 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
+
+
+def contact(request):
+    if request.method == 'POST':
+        form = RegisterForm(request.POST)
+        if form.is_valid():
+            contact = form.save()
+            contact.save()
+            return HttpResponseRedirect('/thanks/')
+    else:
+        form = RegisterForm()
+    return render(request, 'blog/base.html', {'form': form})
