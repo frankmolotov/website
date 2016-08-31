@@ -46,6 +46,7 @@ def post_edit(request, pk):
 
 
 def contact(request):
+    print(request.device.matched)
     if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
