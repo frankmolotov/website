@@ -1,5 +1,6 @@
 {% load staticfiles %}
 <html>
+<<<<<<< HEAD
     <head>
         <script src='https://www.google.com/recaptcha/api.js'></script>
         <link rel="icon" type="image/png" href="../../static/img/tablogo.png">
@@ -46,13 +47,38 @@
                 <div class="g-recaptcha" data-sitekey="6LcWvCgTAAAAAGe6MLnvucEf0tC_uhsTFXdULSvt" data-theme="light"></div>
                 <button type="submit" class=" save btn btn-primary btn-primary"><span class="glyphicon glyphicon-send"></span> Send</button>
             </form>
+=======
+<head>
+    <link rel="icon" type="image/png" href="../../static/img/tablogo.png">
+    <link href="https://fonts.googleapis.com/css?family=Redressed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Suez+One" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Sansita+One" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="header-background">
+        <div class="header">
+>>>>>>> 5bf50beb42ae52b182f687662710e38ecfa66865
         </div>
-        <div class='footer'>
-            <ul class="footer-elements">
-                <li class='footer-element'><a class='footerbutton' href=''>About</a></li>
-                <li class='footer-element'><a class='footerbutton' href=''>Help</a></li>
-                <li class='footer-element'><a class='footerbutton' href=''>Contacts</a></li>
-            </ul>
+    </div>
+    <div class="content-background">
+        <div class="content">
+            {% block content %}
+
+            {% endblock %}
         </div>
-    </body>
+    </div>
+    <div class="footer-background">
+        <div class="footer">
+        </div>
+    </div>
+</body>
 </html>
