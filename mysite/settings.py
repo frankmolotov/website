@@ -38,7 +38,10 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'blog',
     'captcha',
+<<<<<<< HEAD
+=======
     'responsive'
+>>>>>>> 5bf50beb42ae52b182f687662710e38ecfa66865
 )
 
 MIDDLEWARE_CLASSES = (

@@ -2,6 +2,14 @@
     margin: 0;
     padding: 0;
 }
+<<<<<<< HEAD
+
+.background {
+    background: url('../img/bkg2_prod_new.jpg');
+    width: 100%;
+    position: relative;
+}
+=======
 body{
     background-image:url('../img/bkg2_prod_last.jpg');
     background-position: center center;
@@ -12,6 +20,7 @@ body{
 }
 
 
+>>>>>>> 5bf50beb42ae52b182f687662710e38ecfa66865
 .top-ad{
     position: absolute;
     top: 4%;
@@ -68,6 +77,8 @@ body{
     padding-top:4%;
     font-size: 25px;
     font-family: 'Dancing Script', cursive;
+<<<<<<< HEAD
+=======
 }
 .post-form{
     position:absolute;
@@ -86,6 +97,7 @@ body{
     text-align: center;
     margin: 0;
     font-size: 20px;
+>>>>>>> 5bf50beb42ae52b182f687662710e38ecfa66865
 }
 .form-field-name{
     text-align: center;
@@ -301,5 +313,74 @@ body{
         text-decoration: none;
     }
 }
+<<<<<<< HEAD
+.contact-us{
+    position:absolute;
+    top: 80%;
+    left:58%;
+    width: 367px;
+    text-align: center;
+}
+.post-form{
+    position:absolute;
+    top:88%;
+    left: 61%;
+    width: 311px;
+    text-align: center;
+    margin-top: 22px;
+}
+.form-field-name{
+    text-align: center;
+}
+.form-field-name input{
+    margin-left: 28px;
+    width: 300px;
+}
+.form-control-feedback{
+    width: 50px;
+    height: 50px;
+    padding-top:9px;
+}
+.g-recaptcha{
+    transform:scale(0.70);
+    transform-origin: 0 0;
+}
+
+.btn-primary{
+    float: right;
+    margin-top: -70px;
+    background-image: linear-gradient(to bottom,#676a57 0,#494b37 100%);
+    background-repeat: repeat-x;
+    border-color: #2e3124;
+    width: 91px;
+    height: 37px;
+}
+.btn-primary:hover{
+    background-color: #494b37;
+}
+.glyphicon-send{
+    float:left;
+}
+.footer {
+    position: relative;
+    bottom: 0;
+    width:270px;
+    margin: -38px 0 0 200px;
+}
+.footer-element {
+    display: inline-block;
+    margin-left: 35px;
+}
+.footerbutton {
+    color: black;
+    font-family: Arial;
+    font-weight: bold;
+    text-decoration: none;
+}
+.footerbutton:hover {
+    text-decoration: underline;
+}
+=======
 
 
+>>>>>>> 5bf50beb42ae52b182f687662710e38ecfa66865
