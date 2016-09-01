@@ -46,7 +46,9 @@ def post_edit(request, pk):
 
 
 def contact(request):
-    print(request.device.matched)
+    width = int(request.device.width)
+    height = int(request.device.height)
+    multiplier = float(width)/height
     if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
@@ -55,4 +57,4 @@ def contact(request):
             return HttpResponseRedirect('/thanks/')
     else:
         form = RegisterForm()
-    return render(request, 'blog/base.html', {'form': form}, context_instance=RequestContext(request))
+    return render(request, 'blog/base.html', {'form': form, 'multiplier': multiplier}, context_instance=RequestContext(request))

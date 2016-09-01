@@ -38,10 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'blog',
     'captcha',
-<<<<<<< HEAD
-=======
     'responsive'
->>>>>>> 5bf50beb42ae52b182f687662710e38ecfa66865
 )
 
 MIDDLEWARE_CLASSES = (
@@ -124,7 +121,9 @@ RESPONSIVE_MEDIA_QUERIES = {
     'iphone6_h': {
         'verbose_name': _('iPhone 6'),
         'max_height': 667,  # mobile first queries
-        'max_width': 375,
+        'min_height': 375,
+        'min_width': 375,
+        'max_width': 667,
         'pixel_ratio': 2
     },
 
@@ -388,8 +387,10 @@ RESPONSIVE_MEDIA_QUERIES = {
     # /* vertical */
     'laptopl': {
         'verbose_name': _('Laptop Large'),
-        'max_width': 1600,  # mobile first queries
-        'max_height': 900,
+        'max_width': 1800,  # mobile first queries
+        'max_height': 1000,
+        'min_width': 1367,
+        'min_heiht': 769
     },
 
     # /* ----------- Retina  ----------- */

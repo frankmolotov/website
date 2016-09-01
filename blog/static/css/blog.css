@@ -2,14 +2,11 @@
     margin: 0;
     padding: 0;
 }
-<<<<<<< HEAD
 
 .background {
-    background: url('../img/bkg2_prod_new.jpg');
     width: 100%;
     position: relative;
 }
-=======
 body{
     background-image:url('../img/bkg2_prod_last.jpg');
     background-position: center center;

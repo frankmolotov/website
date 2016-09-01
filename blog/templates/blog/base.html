@@ -1,53 +1,5 @@
 {% load staticfiles %}
 <html>
-<<<<<<< HEAD
-    <head>
-        <script src='https://www.google.com/recaptcha/api.js'></script>
-        <link rel="icon" type="image/png" href="../../static/img/tablogo.png">
-        <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Suez+One" rel="stylesheet">
-        <link rel="stylesheet" href="../../static/css/blog.css">
-        <link href="https://fonts.googleapis.com/css?family=Sansita+One" rel="stylesheet">
-        <title>Welcome</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-    </head>
-    <body>
-        <div class = "content">
-            <img class = "background" src="../../static/img/bkg2_prod_new.jpg" alt="">
-            <img class="top-ad" src="../../static/img/top-ad.png" alt="">
-            <div class="info-list">
-                <ul class="info">
-                    <li class='info-element'>Ein Treffen ist jederzeit möglich für unsere Vip Kunden</li>
-                    <li class='info-element'>Wir handeln gezielt und sicher für Sie</li>
-                    <li class='info-element'>Wir schließen Verträge</li>
-                    <li class='info-element'>Wir arbeiten mit europäischen Banken</li>
-                    <li class='info-element'>Wir bieten unseren Kunden einen Zinslosen Kredit an</li>
-                </ul>
-            </div>
-            <div class="timer">
-                <div>
-                    <ul class="timer-indicator">
-                        <li>Stunden</li>
-                        <li>Minuten</li>
-                        <li>Sekunden</li>
-                    </ul>
-                </div>
-                <div>
-                    <script src="../../static/css/timer.js"></script>
-                </div>
-            </div>
-            <p class="contact-us">Kontaktiere uns. Wir werden so schnell wie möglich antworten</p>
-            <form action="" method="POST" class="post-form">{% csrf_token %}
-                <div class="form-group has-feedback has-feedback-left">{{ form.user_name }}<i class=" form-control-feedback glyphicon glyphicon-envelope"></i></div>
-                <div class="form-group has-feedback has-feedback-left">{{ form.email }}<i class="form-control-feedback glyphicon glyphicon-user"></i></div>
-                <div class="form-group has-feedback has-feedback-left">{{ form.phone_number }}<i class="form-control-feedback glyphicon glyphicon-earphone"></i></div>
-                <div class="g-recaptcha" data-sitekey="6LcWvCgTAAAAAGe6MLnvucEf0tC_uhsTFXdULSvt" data-theme="light"></div>
-                <button type="submit" class=" save btn btn-primary btn-primary"><span class="glyphicon glyphicon-send"></span> Send</button>
-            </form>
-=======
 <head>
     <link rel="icon" type="image/png" href="../../static/img/tablogo.png">
     <link href="https://fonts.googleapis.com/css?family=Redressed" rel="stylesheet">
@@ -64,20 +16,27 @@
     <title>Title</title>
 </head>
 <body>
-    <div class="header-background">
+    <div class="wrapper">
+    {% if multiplier >= 1.25 %}
+        <img class="background" src="../../static/img/bkg2_prod_last.jpg" alt="">
+    {% endif %}
         <div class="header">
->>>>>>> 5bf50beb42ae52b182f687662710e38ecfa66865
+            {% if multiplier < 1.25 %}
+                <img class="header-background" src="../../static/img/top.jpg">
+            {% endif %}
         </div>
-    </div>
-    <div class="content-background">
         <div class="content">
+            {% if multiplier < 1.25 %}
+                <img class="content-background" src="../../static/img/sample.jpg">
+            {% endif %}
             {% block content %}
 
             {% endblock %}
         </div>
-    </div>
-    <div class="footer-background">
         <div class="footer">
+            {% if multiplier < 1.25 %}
+                <img class="footer-background" src="../../static/img/bot.jpg">
+            {% endif %}
         </div>
     </div>
 </body>
