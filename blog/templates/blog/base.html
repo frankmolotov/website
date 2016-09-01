@@ -3,6 +3,7 @@
 <head>
     <link rel="icon" type="image/png" href="../../static/img/tablogo.png">
     <link href="https://fonts.googleapis.com/css?family=Redressed" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
@@ -17,16 +18,17 @@
 </head>
 <body>
     <div class="wrapper">
-    {% if multiplier >= 1.5272 %}
+    <!--
+    {% if multiplier >= 1.51 %}
         <img class="background" src="../../static/img/bkg2_prod_last.jpg" alt="">
-    {% endif %}
+    {% endif %}-->
         <div class="header">
-            {% if multiplier < 1.5272 %}
+            {% if multiplier < 1.51 %}
                 <img class="header-background" src="../../static/img/top.jpg">
             {% endif %}
         </div>
         <div class="content">
-            {% if multiplier < 1.5272 %}
+            {% if multiplier < 1.51 %}
                 <img class="content-background" src="../../static/img/sample.jpg">
             {% endif %}
             {% block content %}
@@ -34,7 +36,7 @@
             {% endblock %}
         </div>
         <div class="footer">
-            {% if multiplier < 1.5272 %}
+            {% if multiplier < 1.51 %}
                 <img class="footer-background" src="../../static/img/bot.jpg">
             {% endif %}
         </div>
