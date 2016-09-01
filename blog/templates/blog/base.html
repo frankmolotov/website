@@ -17,16 +17,16 @@
 </head>
 <body>
     <div class="wrapper">
-    {% if multiplier >= 1.25 %}
+    {% if multiplier >= 1.5272 %}
         <img class="background" src="../../static/img/bkg2_prod_last.jpg" alt="">
     {% endif %}
         <div class="header">
-            {% if multiplier < 1.25 %}
+            {% if multiplier < 1.5272 %}
                 <img class="header-background" src="../../static/img/top.jpg">
             {% endif %}
         </div>
         <div class="content">
-            {% if multiplier < 1.25 %}
+            {% if multiplier < 1.5272 %}
                 <img class="content-background" src="../../static/img/sample.jpg">
             {% endif %}
             {% block content %}
@@ -34,7 +34,7 @@
             {% endblock %}
         </div>
         <div class="footer">
-            {% if multiplier < 1.25 %}
+            {% if multiplier < 1.5272 %}
                 <img class="footer-background" src="../../static/img/bot.jpg">
             {% endif %}
         </div>
