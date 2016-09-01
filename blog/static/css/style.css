@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+html, body {
+	height: 100%;
+}
+.conteiner {
+
+	max-width: 1366px;
+	margin: auto;
+	min-height: 100%;
+	border-image: url('../img/b.jpg') 114 114 98 115 stretch stretch;
+	border-color:#f4be52;
+	border-style: inset; 
+	border-width: 60px;
+	background-color: #fff1ce;
+}
+.conteiner__center-img {
+	width: 1000px;
+	margin: auto;
+	display: block;
+	/*margin-top: -120px;*/
+}
+.conteiner__logo {
+	width: 200px;	
+	height:auto;
+	position: relative;
+	z-index: 1;
+	margin-bottom: -70px;
+}
+.conteiner__logo_right {
+	float: right;
+	margin-right: 70px;
+}
+.conteiner__logo_left {
+	margin-left: 70px;
+}
+.conteiner__sponsor {
+	width: 200px;
+}
+.conteiner__sponsors {
+	width: 1116px;
+	margin: auto;
+	margin-top: -60px;
+}
+.conteiner__sponsor {
+	position: relative;
+}
+.conteiner__sponsor_london {
+	top: -12px;
+}
+.conteiner__sponsor_nasdaq {
+	top: -8px;
+}
+.conteiner__sponsor_reuters {
+	top: 11px;
+}
+.conteiner__sponsor {
+	margin-left: 20px;
+}
+.conteiner__bottom-img {
+	width: 170px;
+	position:absolute;
+	bottom:-120px;
+	left: 50%;
+	margin-left: -85px;
+}
+@media only screen and (max-width: 1200px) {
+	.conteiner__sponsor {
+		width: 150px;
+	}
+	.conteiner__sponsors {
+		width: 518px;
+	}
+}
+@media only screen and (max-width: 1270px) {
+	.conteiner__center-img {
+		width: 800px;
+	}
+	.conteiner__logo {
+		width: 150px;	
+	}
+}
+@media only screen and (max-width: 1270px) {
+	.conteiner__center-img {
+		width: 600px;
+	}
+	.conteiner__logo {
+		width: 150px;	
+	}
+}
+/*@media only screen and (max-width: 960px) {
+	.conteiner__center-img {
+		width: 400px;
+	}
+	.conteiner__logo {
+		width: 100px;	
+	}
+	.conteiner__logo {
+		margin-bottom: 0px;
+	}
+}*/
