@@ -7,8 +7,7 @@
     width: 100%;
     position: relative;
 }
-body{
-    background-image:url('../img/bkg2_prod_last.jpg');
+body{;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -17,7 +16,6 @@ body{
 }
 
 
->>>>>>> 5bf50beb42ae52b182f687662710e38ecfa66865
 .top-ad{
     position: absolute;
     top: 4%;
@@ -74,8 +72,7 @@ body{
     padding-top:4%;
     font-size: 25px;
     font-family: 'Dancing Script', cursive;
-<<<<<<< HEAD
-=======
+
 }
 .post-form{
     position:absolute;
@@ -94,7 +91,6 @@ body{
     text-align: center;
     margin: 0;
     font-size: 20px;
->>>>>>> 5bf50beb42ae52b182f687662710e38ecfa66865
 }
 .form-field-name{
     text-align: center;
@@ -310,7 +306,7 @@ body{
         text-decoration: none;
     }
 }
-<<<<<<< HEAD
+
 .contact-us{
     position:absolute;
     top: 80%;
@@ -377,7 +373,4 @@ body{
 .footerbutton:hover {
     text-decoration: underline;
 }
-=======
 
-
->>>>>>> 5bf50beb42ae52b182f687662710e38ecfa66865
