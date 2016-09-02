@@ -1,45 +1,48 @@
 {% load staticfiles %}
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <link rel="icon" type="image/png" href="../../static/img/tablogo.png">
-    <link href="https://fonts.googleapis.com/css?family=Redressed" rel="stylesheet">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Redressed|Allerta+Stencil|Teko|Black+Ops+One|Alfa+Slab+One|Germania+One|Dancing+Script|Suez+One|Sansita+One|Bungee+Inline"
+          rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../static/css/reset.css">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+          integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+          crossorigin="anonymous">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">
     <script src='https://www.google.com/recaptcha/api.js'></script>
-    <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Suez+One" rel="stylesheet">
-    <link rel="stylesheet" href="../../static/css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Sansita+One" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="../../static/css/page_style.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="wrapper">
-    <!--
-    {% if multiplier >= 1.51 %}
-        <img class="background" src="../../static/img/bkg2_prod_last.jpg" alt="">
-    {% endif %}-->
-        <div class="header">
-            {% if multiplier > 1.51 %}
-                <img class="header-background" src="../../static/img/top.jpg">
-            {% endif %}
-        </div>
-        <div class="content">
-            {% if multiplier > 1.51 %}
-                <img class="content-background" src="../../static/img/sample.jpg">
-            {% endif %}
-            {% block content %}
-
-            {% endblock %}
-        </div>
-        <div class="footer">
-            {% if multiplier > 1.51 %}
-                <img class="footer-background" src="../../static/img/bot.jpg">
-            {% endif %}
-        </div>
+<div class="conteiner">
+    <div class="conteiner__sponsors">
+        <img class="conteiner__sponsor" src="../../static/img/sponsors/barclays.png" alt="">
+        <img class="conteiner__sponsor" src="../../static/img/sponsors/dowjones.png" alt="">
+        <img class="conteiner__sponsor conteiner__sponsor_london" src="../../static/img/sponsors/london.png" alt="">
+        <img class="conteiner__sponsor conteiner__sponsor_reuters" src="../../static/img/sponsors/reuters.png" alt="">
+        <img class="conteiner__sponsor conteiner__sponsor_nasdaq" src="../../static/img/sponsors/nasdaq.png" alt="">
     </div>
+    <img class="conteiner__logo conteiner__logo_left" src="../../static/img/logo.jpg" alt="">
+    <img class="conteiner__logo conteiner__logo_right" src="../../static/img/logo.jpg" alt="">
+    <img class="conteiner__center-img" src="../../static/img/cent.png" alt="">
+    <p class="name">NEHMEN SIE AKTIV TEIL AN DER BÖRSE MIT UNS</p>
+    {% block content %}
+    {% endblock %}
+</div>
+
+<img class="conteiner__bottom-img" src="../../static/img/genevastamp.png" alt="">
+<img class=" footer-sponsor footer-sponsors-left" src="../../static/img/sponsors/footer-sponsors-left.png">
+<img class="footer-sponsor footer-sponsors-right" src="../../static/img/sponsors/footer-sponsors-right.png">
+<div class='footer'>
+    <ul class="footer-elements">
+        <li class='footer-element'><a class='footerbutton' href=''>Über uns</a></li>
+        <li class='footer-element'><a class='footerbutton' href=''>Hilfe</a></li>
+        <li class='footer-element'><a class='footerbutton' href=''>Kontakt</a></li>
+    </ul>
+</div>
 </body>
 </html>
