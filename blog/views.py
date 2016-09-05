@@ -1,15 +1,15 @@
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect, render_to_response
 from django.utils import timezone
-#from .models import Post
+from .models import Register
 from .forms import PostForm, RegisterForm
 from django.http import HttpResponseRedirect
 from django.template import RequestContext
-
 
 '''def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date').reverse()
     return render(request, 'blog/post_list.html', {'posts': posts})
 '''
+
 
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
@@ -49,13 +49,21 @@ def contact(request):
     width = int(request.device.width)
     height = int(request.device.height)
     print(request.device, request.device.match_media_queries())
-    multiplier = float(width)/height
+    multiplier = float(width) / height
     if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
             contact = form.save()
             contact.save()
-            return HttpResponseRedirect('/thanks/')
+            return HttpResponseRedirect('/thanks/', {'username': form['user_name']})
     else:
         form = RegisterForm()
-    return render(request, 'blog/index.html', {'form': form, 'multiplier': multiplier}, context_instance=RequestContext(request))
+    return render(request, 'blog/index.html', {'form': form, 'multiplier': multiplier},
+                  context_instance=RequestContext(request))
+
+
+def thanks(request):
+    return render(request, 'blog/thanks.html')
+
+def contactus(request):
+    return render(request, 'blog/contact.html')
