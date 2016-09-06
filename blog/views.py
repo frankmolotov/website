@@ -46,10 +46,6 @@ def post_edit(request, pk):
 
 
 def contact(request):
-    width = int(request.device.width)
-    height = int(request.device.height)
-    print(request.device, request.device.match_media_queries())
-    multiplier = float(width) / height
     if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
@@ -58,8 +54,7 @@ def contact(request):
             return HttpResponseRedirect('/thanks/', {'username': form['user_name']})
     else:
         form = RegisterForm()
-    return render(request, 'blog/index.html', {'form': form, 'multiplier': multiplier},
-                  context_instance=RequestContext(request))
+    return render(request, 'blog/index.html', {'form': form})
 
 
 def thanks(request):
@@ -67,3 +62,6 @@ def thanks(request):
 
 def contactus(request):
     return render(request, 'blog/contact.html')
+
+def about(request):
+    return render(request, 'blog/about.html')

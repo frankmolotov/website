@@ -131,8 +131,13 @@ html, body {
 
 }
 .common-information{
-    margin-bottom: 50px;
-    width: 50%;
+    min-height: 500px;
+    margin: 40px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: Old English Text MT;
 }
 .info-list {
     margin-top: -4%;
@@ -145,6 +150,7 @@ html, body {
     font-size: 30px;
     font-weight: bolder;
 }
+
 .registration {
   text-align: center;
   display: flex;
