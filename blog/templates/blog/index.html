@@ -14,6 +14,7 @@
         </div>
         <div class="contact-form">
             <p class="contact us">Kontaktieren Sie uns. Wir werden so schnell wie möglich Ihre Anfrage bearbeiten.</p>
+            {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
             <form action="" method="POST" class="post-form">{% csrf_token %}
                 <div class="form-group has-feedback has-feedback-left">{{ form.user_name }}<i
                         class=" form-control-feedback glyphicon glyphicon-user"></i></div>

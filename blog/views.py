@@ -51,7 +51,7 @@ def contact(request):
         if form.is_valid():
             contact = form.save()
             contact.save()
-            return HttpResponseRedirect('/thanks/', {'username': form['user_name']})
+            return render(request, 'blog/thanks.html', {'username': form['user_name'].value()})
     else:
         form = RegisterForm()
     return render(request, 'blog/index.html', {'form': form})
