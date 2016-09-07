@@ -168,23 +168,40 @@ html, body {
     align-items: stretch ;
     align-content: stretch;
 }
+.wrapper{
+    font-family: 'Russo One', sans-serif;
+    font-size:20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .contact-information{
-    text-align:center;
-    min-height: 500px;
-    margin: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.logo{
+    text-align: center;
+    z-index: 1;
+}
+.support{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-bottom: 47px;
+}
+.maxim{
+    text-align: center;
 }
 
-.contacts{
-    width:450px;
+.katarina{
+    text-align: center;
 }
-
-.address{
-    padding-top: 99px;
-    padding-right: 13px;
-}
-
 .trader{
-    padding-top: 68px;
+    text-align: center;
+}
+.address{
 }
 .wr-ifo {
     min-height: 500px;
