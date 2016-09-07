@@ -169,7 +169,7 @@ html, body {
     align-content: stretch;
 }
 .wrapper{
-    font-family: 'Russo One', sans-serif;
+    font-family: "Old English Text MT", "Germania One";
     font-size:20px;
     text-align: center;
     display: flex;
@@ -180,6 +180,7 @@ html, body {
     display: flex;
     text-align: center;
     justify-content: space-around;
+    margin-top: 40px;
 }
 .logo{
     text-align: center;
@@ -189,7 +190,7 @@ html, body {
     display: flex;
     text-align: center;
     justify-content: space-around;
-    margin-bottom: 47px;
+    margin-bottom: 100px;
 }
 .maxim{
     text-align: center;
