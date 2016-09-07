@@ -339,7 +339,7 @@ input#inputSuccess2.form-control{
     }
 }
 .info-element{
-    font-family: 'Old English Text MT';
+    font-family: "Old English Text MT", "Dancing Script", cursive;
     /*font-family: 'Dancing Script', cursive;*/
 }
 .indicator{
