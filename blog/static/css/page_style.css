@@ -228,6 +228,7 @@ html, body {
 }
 .glyphicon-earphone, .glyphicon-envelope, .glyphicon-user{
     top:9px;
+    left: 312px;
 }
 input#inputSuccess2.form-control{
     padding-left: 15px;
