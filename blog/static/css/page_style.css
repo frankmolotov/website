@@ -169,10 +169,23 @@ html, body {
     align-content: stretch;
 }
 .contact-information{
+    text-align:center;
     min-height: 500px;
     margin: 40px;
 }
 
+.contacts{
+    width:450px;
+}
+
+.address{
+    padding-top: 99px;
+    padding-right: 13px;
+}
+
+.trader{
+    padding-top: 68px;
+}
 .wr-ifo {
     min-height: 500px;
     margin: 40px;
@@ -308,7 +321,8 @@ input#inputSuccess2.form-control{
     }
 }
 .info-element{
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Old English Text MT';
+    /*font-family: 'Dancing Script', cursive;*/
 }
 .indicator{
     width:100%;
