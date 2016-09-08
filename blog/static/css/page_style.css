@@ -172,6 +172,7 @@ html, body {
 .wrapper{
     font-family: "Old English Text MT", "Germania One";
     font-size:25px;
+    font-weight: bold;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -186,6 +187,7 @@ html, body {
 .logo{
     text-align: center;
     z-index: 1;
+    height: 104px;
 }
 .support{
     display: flex;
@@ -195,15 +197,19 @@ html, body {
 }
 .maxim{
     text-align: center;
+    padding-left: 200px;
 }
 
 .katarina{
     text-align: center;
+    padding-right: 182px;
 }
 .trader{
     text-align: center;
+    padding-left: 200px;
 }
 .address{
+    padding-right: 182px;
 }
 .wr-ifo {
     min-height: 500px;
