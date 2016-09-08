@@ -420,6 +420,34 @@ input#inputSuccess2.form-control{
     .conteiner__logo_left {
         margin-top: -34px;
     }
+    .trust{
+        position: absolute;
+        z-index: 0;
+        right: 0;
+        margin-top: -13%;
+        margin-right: 5%;
+    }
+    .sign{
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        margin-top: -18%;
+        margin-right: 7%;
+    }
+    .secretary{
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        margin-top: -13%;
+        margin-right: 72%;
+    }
+    .signsecretary{
+        position: absolute;
+        z-index: 0;
+        right: 0;
+        margin-top: -18%;
+        margin-right: 70%;
+    }
 }
 .info-element{
     font-family: "Old English Text MT", "Dancing Script", cursive;
