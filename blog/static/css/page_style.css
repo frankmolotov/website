@@ -154,6 +154,12 @@ html, body {
     max-width:60%;
     text-align: left;
 }
+@media only screen and (max-width: 900px) {
+    .info-list{
+        max-width: 30%;
+    }
+
+}
 .info-element{
     font-size: 30px;
     font-weight: bolder;
@@ -314,7 +320,6 @@ input#inputSuccess2.form-control{
     }
 }
 
-
 @media only screen and (max-width: 1270px) {
     .name{
     position: relative;
@@ -400,12 +405,7 @@ input#inputSuccess2.form-control{
 .glyphicon-send{
     padding: 0 10px 0 0;
 }
-@media only screen and (max-width: 900px) {
-    .info-list{
-        max-width: 30%;
-    }
 
-}
 
 .contact-form{
     text-align: center;
