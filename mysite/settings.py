@@ -38,7 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'blog',
     'captcha',
-    'responsive'
+    'responsive',
+    'webmaster_verification'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -73,6 +74,10 @@ TEMPLATES = [
         },
     },
 ]
+
+WEBMASTER_VERIFICATION = {
+    'google': 'googleacb34a5caa91b5c1',
+}
 
 RESPONSIVE_MEDIA_QUERIES = {
 
