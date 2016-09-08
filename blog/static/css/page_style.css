@@ -89,8 +89,8 @@ html, body {
     position: absolute;
     z-index: 0;
     right: 0;
-    margin-top: -23%;
-    margin-right: 3%;
+    margin-top: -10%;
+    margin-right: 5%;
 }
 .sign{
     position: absolute;
@@ -98,6 +98,20 @@ html, body {
     right: 0;
     margin-top: -15%;
     margin-right: 7%;
+}
+.secretary{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    margin-top: -10%;
+    margin-right: 72%;
+}
+.signsecretary{
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    margin-top: -15%;
+    margin-right: 70%;
 }
 .footer-sponsor{
     z-index:1;
