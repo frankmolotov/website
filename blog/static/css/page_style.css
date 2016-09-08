@@ -151,7 +151,7 @@ html, body {
     margin-bottom: 8%;
     padding: 0 5%;
     min-height: 380px;
-    max-width:66%;
+    max-width:60%;
     text-align: left;
 }
 .info-element{
@@ -406,6 +406,7 @@ input#inputSuccess2.form-control{
     }
 
 }
+
 .contact-form{
     text-align: center;
     width: inherit;
