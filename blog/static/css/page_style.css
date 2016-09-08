@@ -399,7 +399,7 @@ input#inputSuccess2.form-control{
 }
 @media only screen and (max-width: 900px) {
     .info-list{
-        max-width: 40%;
+        max-width: 35%;
     }
 
 }
