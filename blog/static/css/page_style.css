@@ -85,6 +85,13 @@ html, body {
     margin: auto;
     margin-top: -176px;
 }
+.trust{
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    margin-top: -23%;
+    margin-right: 3%;
+}
 .footer-sponsor{
     z-index:1;
     width: 40%;
