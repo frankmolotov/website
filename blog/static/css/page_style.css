@@ -182,6 +182,34 @@ html, body {
     .info-element{
         max-width: 30%;
     }
+    .trust{
+        position: absolute;
+        z-index: 0;
+        right: 0;
+        margin-top: -18%;
+        margin-right: 5%;
+    }
+    .sign{
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        margin-top: -18%;
+        margin-right: 7%;
+    }
+    .secretary{
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        margin-top: -18%;
+        margin-right: 72%;
+    }
+    .signsecretary{
+        position: absolute;
+        z-index: 0;
+        right: 0;
+        margin-top: -18%;
+        margin-right: 70%;
+    }
 
 }
 .info-element{
