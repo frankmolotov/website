@@ -156,6 +156,9 @@ html, body {
 }
 @media only screen and (max-width: 900px) {
     .info-list{
+        max-width: 20%;
+    }
+    .info-element{
         max-width: 30%;
     }
 
@@ -356,7 +359,7 @@ input#inputSuccess2.form-control{
 /*@media only screen and (max-height: )*/
 @media only screen and (max-width: 1270px) {
     .info-list{
-        max-width: 66%;
+        max-width: 60%;
     }
     .conteiner__center-img {
         width: 600px;
