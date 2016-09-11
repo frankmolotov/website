@@ -23,7 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'czh-8)nef97o9l$^1pdy=%n*%h8y*$ywq#t81$2a9eil5*t1jf'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG = True
 DEBUG = False
+
 
 ALLOWED_HOSTS = ['.XN--GENFERBRSE-KCB.COM']
 
