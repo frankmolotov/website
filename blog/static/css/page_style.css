@@ -155,9 +155,50 @@ html, body {
     justify-content: flex-start;
     align-items: flex-end;
 }
-.greetings{
 
+.wrapper{
+    font-family: "Old English Text MT", "Germania One";
+    font-size:25px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+.contact-information{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.logo{
+    text-align: center;
+    z-index: 1;
+    height: 104px;
+}
+.support{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.maxim{
+    text-align: center;
+    padding-left: 178px;
+}
+
+.katarina{
+    text-align: center;
+    padding-right: 182px;
+}
+.trader{
+    text-align: center;
+    padding-left: 200px;
+}
+.address{
+    padding-right: 165px;
+}.
+
 .common-information{
     min-height: 500px;
     margin: 40px;
@@ -176,6 +217,48 @@ html, body {
     text-align: left;
 }
 @media only screen and (max-width: 900px) {
+    .wrapper{
+        font-family: "Old English Text MT", "Germania One";
+        font-size:25px;
+        font-weight: bold;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact-information{
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+    .logo{
+        text-align: center;
+        z-index: 1;
+        height: 104px;
+    }
+    .support{
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        margin-bottom: 100px;
+    }
+    .maxim{
+        text-align: center;
+        padding-left: 178px;
+    }
+
+    .katarina{
+        text-align: center;
+        padding-right: 182px;
+    }
+    .trader{
+        text-align: center;
+        padding-left: 200px;
+    }
+    .address{
+        padding-right: 165px;
+    }
     .info-list{
         max-width: 20%;
     }
@@ -233,48 +316,6 @@ html, body {
     justify-content: space-between;
     align-items: stretch ;
     align-content: stretch;
-}
-.wrapper{
-    font-family: "Old English Text MT", "Germania One";
-    font-size:25px;
-    font-weight: bold;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.contact-information{
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    margin-top: 40px;
-}
-.logo{
-    text-align: center;
-    z-index: 1;
-    height: 104px;
-}
-.support{
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    margin-bottom: 100px;
-}
-.maxim{
-    text-align: center;
-    padding-left: 178px;
-}
-
-.katarina{
-    text-align: center;
-    padding-right: 182px;
-}
-.trader{
-    text-align: center;
-    padding-left: 200px;
-}
-.address{
-    padding-right: 165px;
 }
 .wr-ifo {
     min-height: 500px;
