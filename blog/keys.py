@@ -1,2 +1,9 @@
-from recaptcha import RecaptchaClient
-recaptcha_client = RecaptchaClient('6LcWvCgTAAAAAGgHysyYqOg9LK2K4u_NpkiPW_y4', '6LcWvCgTAAAAAGe6MLnvucEf0tC_uhsTFXdULSvt')
+import random
+
+def get_encrypted_key(key):
+    file = open(key, 'r')
+    information = file.readlines()
+    return information
+
+key = 'test.txt'
+print(get_encrypted_key(key))
