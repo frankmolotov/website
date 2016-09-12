@@ -29,6 +29,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['.XN--GENFERBRSE-KCB.COM']
 
+SECURE_SSL_REDIRECT = True
 # Application definition
 
 INSTALLED_APPS = (

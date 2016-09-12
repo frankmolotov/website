@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect, render_to_response
 from django.utils import timezone
-from .models import Register
+from .models import Post,Register
 from .forms import PostForm, RegisterForm
 from django.http import HttpResponseRedirect
 from django.template import RequestContext
