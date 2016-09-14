@@ -334,6 +334,10 @@ html, body {
 .form-control:focus{
     border-color: #494b37;
 }
+.valide{
+    border-color: red !important;
+    background-color: hotpink !important;
+}
 .description{
     font-size: 20px;
     font-weight: bolder;

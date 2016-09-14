@@ -52,6 +52,7 @@ def contact(request):
             contact = form.save()
             contact.save()
             return render(request, 'blog/thanks.html', {'username': form['user_name'].value()})
+
     else:
         form = RegisterForm()
     return render(request, 'blog/index.html', {'form': form})
