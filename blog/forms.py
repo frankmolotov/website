@@ -17,12 +17,14 @@ class RegisterForm(forms.ModelForm):
         self.fields['email'].required = True
         self.fields['user_name'].required = True
         self.fields['phone_number'].required = True
+        self.fields['user_name'].error_messages({'required': 'Bitte geben Sie Ihre Namen ein.'})
+        self.fields['email'].error_messages({'required': 'Bitte geben Sie Ihre E-mail ein.'})
+        self.fields['phone_number'].error_messages({'required': 'Bitte geben Sie Ihre Telefonnummer ein.'})
         self.fields['user_name'].widget = TextInput(
             attrs={'type': 'name', 'class': 'form-control', 'placeholder': 'Name und Vorname *', 'id': 'inputSuccess2'})
         self.fields['email'].widget = TextInput(attrs={'type': 'email', 'class': 'form-control', 'placeholder': 'E-Mail *', 'id': 'inputSuccess2'})
-        self.fields['phone_number'].widget = TextInput(attrs={'type': 'tel', 'class': 'form-control', 'placeholder': 'Telefonnummer', 'data-country': 'DE', 'id': 'inputSuccess2'})
+        self.fields['phone_number'].widget = TextInput(attrs={'type': 'tel', 'class': 'form-control', 'placeholder': 'Telefonnummer *', 'data-country': 'DE', 'id': 'inputSuccess2'})
 
     class Meta:
         model = Register
-        recaptcha = ReCaptchaField()
         fields = {'user_name', 'email', 'phone_number'}
