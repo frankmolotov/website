@@ -79,7 +79,7 @@ TEMPLATES = [
 
 
 WEBMASTER_VERIFICATION = {
-    'google': 'googleacb34a5caa91b5c1',
+    'google': 'google7b31c29404df8bd7',
 }
 
 RESPONSIVE_MEDIA_QUERIES = {
@@ -427,7 +427,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Europe/Kiev'
+TIME_ZONE = 'Europe/Zurich'
 
 USE_I18N = True
 
