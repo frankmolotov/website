@@ -513,15 +513,17 @@ input#inputSuccess2.form-control{
     background-image: linear-gradient(to bottom, #006622 0,#66ff99 100%);
     background-repeat: repeat-x;
     border: 1px solid black;
+    vertical-align: center;
     color: black;
     width: 350px;
     height: 46px;
 }
 .send{
-    color: white;
-    padding-top: 11px;
-    font-size: 17px;
+    margin:0;
+    color: #fff1ce;
+    font-size: 37px;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px  black;
+    font-weight: bold;;
 }
 .btn-primary:hover{
     background: linear-gradient(to top, #006622 0,#66ff99 100%) !important ;
