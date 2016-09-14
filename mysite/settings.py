@@ -29,7 +29,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['.XN--GENFERBRSE-KCB.COM']
 
-SECURE_SSL_REDIRECT = True
 # Application definition
 
 INSTALLED_APPS = (
@@ -42,7 +41,8 @@ INSTALLED_APPS = (
     'blog',
     'captcha',
     'responsive',
-    'webmaster_verification'
+    'webmaster_verification',
+    'google_analytics'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -77,6 +77,10 @@ TEMPLATES = [
         },
     },
 ]
+
+GOOGLE_ANALYTICS = {
+    'google_analytics_id': 'UA-84129451-1',
+}
 
 WEBMASTER_VERIFICATION = {
     'google': 'googleacb34a5caa91b5c1',
