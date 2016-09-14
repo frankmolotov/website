@@ -16,6 +16,7 @@ class RegisterForm(forms.ModelForm):
         super(RegisterForm, self).__init__(*args, **kwargs)
         self.fields['email'].required = True
         self.fields['user_name'].required = True
+        self.fields['phone_number'].required = True
         self.fields['user_name'].widget = TextInput(
             attrs={'type': 'name', 'class': 'form-control', 'placeholder': 'Name und Vorname *', 'id': 'inputSuccess2'})
         self.fields['email'].widget = TextInput(attrs={'type': 'email', 'class': 'form-control', 'placeholder': 'E-Mail *', 'id': 'inputSuccess2'})
