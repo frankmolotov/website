@@ -24,7 +24,9 @@ html, body {
     text-align: center;
     font-family: 'Germania One', cursive;
     /*font-family: 'Germania One', cursive;*/
-    font-size: 69px;;
+    font-size: 69px;
+}
+.advertising{
     background: #1bff0c ;
 }
 
