@@ -18,6 +18,7 @@
                     <form id="loginForm" action="" method="POST"
                           onsubmit="return validate(document.getElementById('loginForm'));"
                           class="post-form">{% csrf_token %}
+                        <p>{{ form.errors }}</p>
                         <div class="form-group has-feedback has-feedback-left ">
                             {{ form.user_name }}<i class=" form-control-feedback glyphicon glyphicon-user "></i>
                         </div>
