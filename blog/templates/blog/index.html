@@ -20,7 +20,6 @@
                           class="post-form">{% csrf_token %}
                         <div class="form-group has-feedback has-feedback-left ">
                             {{ form.user_name }}<i class=" form-control-feedback glyphicon glyphicon-user "></i>
-
                         </div>
                         <div class="form-group  has-feedback has-feedback-left ">{{ form.email }}<i
                                 class="form-control-feedback glyphicon glyphicon-envelope"></i></div>
@@ -33,17 +32,19 @@
                             var len = form.elements.length,
                                     elems = form.elements;
                             flag = false;
-                            console.log(len);
                             for (var i = 0; i < len; i++) {
                                 if ((elems[i].value == "" || elems[i].value == elems[i].dataset.required) && elems[i].type != "submit") {
                                     elems[i].style.border = "2px solid red";
                                     elems[i].style.color = "red";
+                                    elems[i].style.backgroundColor = "pink";
                                     elems[i].value = elems[i].dataset.required;
                                     flag = true;
-                                } else {
-                                    elems[i].style.border = "";
-                                    elems[i].style.color = "";
-                                    elems[i].value = "";
+                                    elems[i].addEventListener("click", function () {
+                                        this.value = "";
+                                        this.style.border = "";
+                                        this.style.backgroundColor = "";
+                                        this.style.color = "green";
+                                    })
                                 }
                             }
                             if (flag)

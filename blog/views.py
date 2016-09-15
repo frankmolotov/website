@@ -54,7 +54,7 @@ def contact(request):
             return render(request, 'blog/thanks.html', {'username': form['user_name'].value()})
     else:
         form = RegisterForm()
-    return render(request, 'blog/index.html', {'form': form})
+    return render(request, 'blog/index.html', {'form': form,})
 
 
 def thanks(request):
