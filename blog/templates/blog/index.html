@@ -15,7 +15,7 @@
                 <div class="contact-form">
                     <p class="contact us">Kontaktieren Sie uns. Wir werden so schnell wie möglich Ihre Anfrage
                         bearbeiten.</p>
-                    <form id="loginForm" action="" method="POST" class="post-form">{% csrf_token %}
+                    <form id="loginForm" action="" method="POST" onsubmit="checkValid()" class="post-form">{% csrf_token %}
                         <p>{{ form.error_class }}</p>
                         <div class="form-group has-feedback has-feedback-left ">
                                 {{ form.user_name }}<i class=" form-control-feedback glyphicon glyphicon-user "></i>
