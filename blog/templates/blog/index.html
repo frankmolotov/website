@@ -15,7 +15,8 @@
                 <div class="contact-form">
                     <p class="contact us">Kontaktieren Sie uns. Wir werden so schnell wie möglich Ihre Anfrage
                         bearbeiten.</p>
-                    <form id="loginForm" action="" method="POST"  onsubmit="return validate(document.getElementById('loginForm'));"
+                    <form id="loginForm" action="" method="POST"
+                          onsubmit="return validate(document.getElementById('loginForm'));"
                           class="post-form">{% csrf_token %}
                         <div class="form-group has-feedback has-feedback-left ">
                             {{ form.user_name }}<i class=" form-control-feedback glyphicon glyphicon-user "></i>
@@ -34,11 +35,15 @@
                             flag = false;
                             console.log(len);
                             for (var i = 0; i < len; i++) {
-                                if (elems[i].value == "" && elems[i].type != "submit") {
+                                if ((elems[i].value == "" || elems[i].value == elems[i].dataset.required) && elems[i].type != "submit") {
                                     elems[i].style.border = "2px solid red";
+                                    elems[i].style.color = "red";
+                                    elems[i].value = elems[i].dataset.required;
                                     flag = true;
                                 } else {
                                     elems[i].style.border = "";
+                                    elems[i].style.color = "";
+                                    elems[i].value = "";
                                 }
                             }
                             if (flag)
