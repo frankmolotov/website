@@ -15,10 +15,10 @@
                 <div class="contact-form">
                     <p class="contact us">Kontaktieren Sie uns. Wir werden so schnell wie möglich Ihre Anfrage
                         bearbeiten.</p>
-                    <form id="loginForm" action="" method="POST" onsubmit="checkValid()" class="post-form">{% csrf_token %}
-                        <p>{{ form.error_class }}</p>
+                    <form id="loginForm" action="" method="POST"  onsubmit="return validate(document.getElementById('loginForm'));"
+                          class="post-form">{% csrf_token %}
                         <div class="form-group has-feedback has-feedback-left ">
-                                {{ form.user_name }}<i class=" form-control-feedback glyphicon glyphicon-user "></i>
+                            {{ form.user_name }}<i class=" form-control-feedback glyphicon glyphicon-user "></i>
 
                         </div>
                         <div class="form-group  has-feedback has-feedback-left ">{{ form.email }}<i
@@ -27,6 +27,25 @@
                                 class="form-control-feedback glyphicon glyphicon-earphone"></i></div>
                         <button type="submit" class="save btn-primary "><p class="send">Aktivieren</p></button>
                     </form>
+                    <script>
+                        function validate(form) {
+                            var len = form.elements.length,
+                                    elems = form.elements;
+                            flag = false;
+                            console.log(len);
+                            for (var i = 0; i < len; i++) {
+                                if (elems[i].value == "" && elems[i].type != "submit") {
+                                    elems[i].style.border = "2px solid red";
+                                    flag = true;
+                                } else {
+                                    elems[i].style.border = "";
+                                }
+                            }
+                            if (flag)
+                                return false;
+                            else return true;
+                        }
+                    </script>
                 </div>
             </div>
 
