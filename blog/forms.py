@@ -14,6 +14,9 @@ class PostForm(forms.ModelForm):
 class RegisterForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(RegisterForm, self).__init__(*args, **kwargs)
+        self.fields['user_name'].required = False
+        self.fields['email'].required = False
+        self.fields['phone_number'].required = False
         self.fields['user_name'].widget = TextInput(
             attrs={'class': 'form-control', 'placeholder': 'Name und Vorname *', 'id': 'inputSuccess2'})
         self.fields['email'].widget = TextInput(
