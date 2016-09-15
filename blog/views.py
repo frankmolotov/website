@@ -49,7 +49,8 @@ def contact(request):
     if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
-            contact = form.save()
+            contact = form.save(commit=False)
+            contact.registration_date = timezone.now()
             contact.save()
             return render(request, 'blog/thanks.html', {'username': form['user_name'].value()})
     else:

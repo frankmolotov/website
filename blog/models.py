@@ -24,6 +24,7 @@ class Register(models.Model):
     user_name = models.CharField(max_length=100)
     email = models.CharField(max_length=100)
     phone_number = models.CharField(max_length=15)  # validators should be a list
-
+    registration_date = models.DateTimeField(
+        blank=True, null=True)
     def submit(self):
         self.save()
