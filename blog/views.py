@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect, render_to_response
 from django.utils import timezone
-from .models import Post,Register
+from .models import Post, Register
 from .forms import PostForm, RegisterForm
 from django.http import HttpResponseRedirect
 from django.template import RequestContext
@@ -52,7 +52,6 @@ def contact(request):
             contact = form.save()
             contact.save()
             return render(request, 'blog/thanks.html', {'username': form['user_name'].value()})
-
     else:
         form = RegisterForm()
     return render(request, 'blog/index.html', {'form': form})
@@ -61,8 +60,10 @@ def contact(request):
 def thanks(request):
     return render(request, 'blog/thanks.html')
 
+
 def contactus(request):
     return render(request, 'blog/contact.html')
+
 
 def about(request):
     return render(request, 'blog/about.html')

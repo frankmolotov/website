@@ -22,8 +22,8 @@ class Post(models.Model):
 
 class Register(models.Model):
     user_name = models.CharField(max_length=100)
-    email = models.EmailField()
-    phone_number = models.CharField(blank=True ,max_length=15)  # validators should be a list
+    email = models.CharField(max_length=100)
+    phone_number = models.CharField(max_length=15)  # validators should be a list
 
     def submit(self):
         self.save()

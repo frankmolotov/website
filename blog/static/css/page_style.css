@@ -334,10 +334,13 @@ html, body {
 .form-control:focus{
     border-color: #494b37;
 }
-.valide{
-    border-color: red !important;
-    background-color: hotpink !important;
+input#inputSuccess2 .has-error .form-control-feedback {
+    background-color: #a94442 !important;
 }
+input#inputSuccess2 .has-success .form-control-feedback {
+    background-color: #3c763d !important;
+}
+
 .description{
     font-size: 20px;
     font-weight: bolder;
