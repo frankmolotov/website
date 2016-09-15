@@ -21,12 +21,12 @@ class RegisterForm(forms.ModelForm):
         self.fields['user_name'].error_messages = {'required' : 'Bitte geben Sie Ihre Namen ein'}
         self.fields['phone_number'].error_messages = {'required' : 'Bitte geben Sie Ihre Telefonnummer ein'}
         self.fields['user_name'].widget = TextInput(
-            attrs={'type': 'name', 'class': 'form-control', 'placeholder': 'Name und Vorname *', 'id': 'inputSuccess2'})
+            attrs={'type': 'name', 'class': 'form-control', 'placeholder': 'Name und Vorname *', 'id': 'inputSuccess2', 'required': 'required'})
         self.fields['email'].widget = TextInput(
-            attrs={'type': 'email', 'class': 'form-control', 'placeholder': 'E-Mail *', 'id': 'inputSuccess2'})
+            attrs={'type': 'email', 'class': 'form-control', 'placeholder': 'E-Mail *', 'id': 'inputSuccess2', 'required': 'required'})
         self.fields['phone_number'].widget = TextInput(
             attrs={'type': 'tel', 'class': 'form-control', 'placeholder': 'Telefonnummer *', 'data-country': 'DE',
-                   'id': 'inputSuccess2'})
+                   'id': 'inputSuccess2', 'required': 'required'})
         # for field in self.fields.values():
         #   field.error_messages = {'required': 'Pole {fieldname} is required'.format(fieldname=field.label)}
 
