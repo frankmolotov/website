@@ -8,6 +8,7 @@ html, body {
     height: 100%;
 }
 
+
 .conteiner {
 
     max-width: 1920px;
@@ -88,13 +89,7 @@ html, body {
     margin: auto;
     margin-top: -176px;
 }
-.trust{
-    position: absolute;
-    z-index: 0;
-    right: 0;
-    margin-top: -10%;
-    margin-right: 5%;
-}
+
 .sign{
     position: absolute;
     z-index: 1;
@@ -109,13 +104,7 @@ html, body {
     margin-top: -10%;
     margin-right: 72%;
 }
-.signsecretary{
-    position: absolute;
-    z-index: 0;
-    right: 0;
-    margin-top: -15%;
-    margin-right: 3%;
-}
+
 .total-capital{
     display: inline-block;
     width: 40%;
@@ -140,6 +129,13 @@ html, body {
     text-shadow: -4px -4px 0 black, 4px -4px 0 black, -4px 4px 0 black, 4px 4px black;
     font-size: 400%;
 }
+.signsecretary{
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    margin-top: -15%;
+    margin-right: 3%;
+}
 .footer-sponsor{
     z-index:1;
     width: 40%;
@@ -159,6 +155,13 @@ html, body {
 }
 .registration, .info-list {
     display: inline-block;
+}
+.trust{
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    margin-top: -11%;
+    margin-right: 5%;
 }
 .name{
     word-spacing: 2px;
@@ -411,6 +414,7 @@ input#inputSuccess2.form-control{
     margin-bottom: 0;
 }
 
+
 .footerbutton {
     text-decoration: none;
     font-family: 'Germania One', cursive;
@@ -420,6 +424,7 @@ input#inputSuccess2.form-control{
 .footerbutton:hover {
     text-decoration: underline;
 }
+
 
 @media only screen and (max-width: 1200px) {
     .conteiner__logo_right{
@@ -448,6 +453,13 @@ input#inputSuccess2.form-control{
 }
 
 @media only screen and (max-width: 1270px) {
+    .signsecretary{
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    margin-top: -15%;
+    margin-right: 3%;
+    }
     .name{
     position: relative;
     font-weight: bold;
@@ -524,8 +536,25 @@ input#inputSuccess2.form-control{
         margin-right: 3%;
     }
 }
+@media only screen and (max-width: 2000px){
+    .signsecretary{
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    margin-top: -12%;
+    margin-right: 3%;
+    }
+    .trust{
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    margin-top: -8%;
+    margin-right: 5%;
+    }
+
+}
 .info-element{
-    font-family: "Old English Text MT", "Dancing Script", cursive;
+    font-family: "Old English Text MT","Arial Black", "Dancing Script", cursive;
     /*font-family: 'Dancing Script', cursive;*/
 }
 .indicator{
@@ -539,7 +568,7 @@ input#inputSuccess2.form-control{
     padding: 0 46px 0 57px;
 }
 .btn-primary{
-    margin-right: 0px;
+    margin-right: 0;
     margin-top: 6px;
     background-image: linear-gradient(to bottom, #006622 0,#66ff99 100%);
     background-repeat: repeat-x;
@@ -583,6 +612,9 @@ input#inputSuccess2.form-control{
 }
 
 
+
+
+
 .contact-form{
     text-align: center;
     width: inherit;
@@ -590,6 +622,7 @@ input#inputSuccess2.form-control{
 .form-group{
     width: 300px;
 }
+
 
 /*@media only screen and (max-width: 960px) {
 	.conteiner__center-img {
