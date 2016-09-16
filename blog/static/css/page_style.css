@@ -127,18 +127,18 @@ html, body {
 }
 .total-capital-label{
     margin:0;
-    color: white;
-    text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px  black;
-    font-size:26px;
+    color: black;
+    /*text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px  black;*/
+    font-size:15px;
     text-align: center;
 }
 .total-capital-value{
-    letter-spacing: 0px;
+    line-height: 100%;
     margin: 0;
     text-align: center;
     color: white;
     text-shadow: -4px -4px 0 black, 4px -4px 0 black, -4px 4px 0 black, 4px 4px black;
-    font-size: 59px;
+    font-size: 400%;
 }
 .footer-sponsor{
     z-index:1;
