@@ -311,7 +311,7 @@ html, body {
         z-index: 0;
         right: 0;
         margin-top: -13%;
-        margin-right: 72%;
+        margin-right: 3%;
     }
     .signsecretary{
         position: absolute;
@@ -521,7 +521,7 @@ input#inputSuccess2.form-control{
         z-index: 0;
         right: 0;
         margin-top: -18%;
-        margin-right: 70%;
+        margin-right: 3%;
     }
 }
 .info-element{
