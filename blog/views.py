@@ -19,13 +19,12 @@ def contact(request):
         form = RegisterForm(request.POST)
         if form.is_valid():
             contact = form.save(commit=False)
-            print(Count.objects.all()[0].count_of_users)
             contact.registration_date = timezone.now()
             contact.save()
             return render(request, 'blog/thanks.html', {'username': form['user_name'].value()})
     else:
         form = RegisterForm()
-    return render(request, 'blog/index.html', {'form': form, 'count_of_users': Count.objects.all()[0].count_of_users})
+    return render(request, 'blog/index.html', {'form': form, 'count_of_users': Count.objects.all()[0].count_of_users, 'total_capital': Count.objects.all()[0].capital})
 
 def thanks(request):
     return render(request, 'blog/thanks.html')

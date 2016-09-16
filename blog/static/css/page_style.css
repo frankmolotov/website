@@ -116,6 +116,30 @@ html, body {
     margin-top: -15%;
     margin-right: 3%;
 }
+.total-capital{
+    display: inline-block;
+    width: 40%;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 70px;
+    border: 2px solid black;
+    background-color: rgba(255, 0, 0, 0.72);
+}
+.total-capital-label{
+    margin:0;
+    color: white;
+    text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px  black;
+    font-size:26px;
+    text-align: center;
+}
+.total-capital-value{
+    letter-spacing: 14px;
+    margin: 0;
+    text-align: center;
+    color: white;
+    text-shadow: -4px -4px 0 black, 4px -4px 0 black, -4px 4px 0 black, 4px 4px  black;
+    font-size: 60px;
+}
 .footer-sponsor{
     z-index:1;
     width: 40%;
@@ -304,7 +328,7 @@ html, body {
 }
 
 .registration {
-  margin-bottom: 43px;
+  margin-bottom: -54px;
   text-align: center;
   display: flex;
   flex-direction: row-reverse;
