@@ -133,12 +133,12 @@ html, body {
     text-align: center;
 }
 .total-capital-value{
-    letter-spacing: 14px;
+    letter-spacing: 0px;
     margin: 0;
     text-align: center;
     color: white;
-    text-shadow: -4px -4px 0 black, 4px -4px 0 black, -4px 4px 0 black, 4px 4px  black;
-    font-size: 60px;
+    text-shadow: -4px -4px 0 black, 4px -4px 0 black, -4px 4px 0 black, 4px 4px black;
+    font-size: 59px;
 }
 .footer-sponsor{
     z-index:1;
@@ -328,7 +328,7 @@ html, body {
 }
 
 .registration {
-  margin-bottom: -54px;
+  margin-bottom: -5%;
   text-align: center;
   display: flex;
   flex-direction: row-reverse;
