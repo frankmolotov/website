@@ -17,4 +17,6 @@ class Register(models.Model):
     def submit(self):
         self.save()
 
+    def __str__(self):
+        return self.user_name
 
