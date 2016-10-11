@@ -1,6 +1,5 @@
 from django import forms
 from .models import Register, Count
-from .fields import ReCaptchaField
 from django.forms.widgets import TextInput, EmailInput
 from django.forms import widgets
 
