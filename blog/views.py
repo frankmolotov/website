@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect, render_to_resp
 from django.utils import timezone
 from .forms import RegisterForm
 from .models import Count
-from django.http import HttpResponseRedirect
+from django.http import JsonResponse
 from django.template import RequestContext
 
 '''def post_list(request):
@@ -36,3 +36,19 @@ def contactus(request):
 
 def about(request):
     return render(request, 'blog/about.html')
+
+def zadarma(request):
+    if request.method == 'POST':
+        if '185.45.152.42' in request.get_host():
+            data = {
+                "redirect": 104,
+                "caller_name": 'Internal 104',
+            }
+            return JsonResponse(data=data)
+    else:
+        data = {
+            'Status': 'Bad',
+            'Error': 'Unknown user',
+        }
+        return JsonResponse(data=data)
+
