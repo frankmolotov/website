@@ -3,6 +3,7 @@ from django.utils import timezone
 from .forms import RegisterForm
 from .models import Count
 from django.http import JsonResponse
+import sys
 from django.template import RequestContext
 
 '''def post_list(request):
@@ -38,13 +39,16 @@ def about(request):
     return render(request, 'blog/about.html')
 
 def zadarma(request):
-    if request.method == 'POST':
-        if '185.45.152.42' in request.get_host():
+    if '185.45.152.42' in request.get_host():
+        if request.method == 'POST':
             data = {
                 "redirect": 104,
                 "caller_name": 'Internal 104',
             }
             return JsonResponse(data=data)
+        elif request.method == 'GET':
+            if request.GET['zd_echo'] is not None:
+                sys.exit(request.GET['zd_echo'])
     else:
         data = {
             'Status': 'Bad',
