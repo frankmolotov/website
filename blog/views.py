@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect, render_to_resp
 from django.utils import timezone
 from .forms import RegisterForm
 from .models import Count
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 import sys
 from django.template import RequestContext
 
@@ -48,11 +48,5 @@ def zadarma(request):
             return JsonResponse(data=data)
         elif request.method == 'GET':
             if request.GET['zd_echo'] is not None:
-                sys.exit(request.GET['zd_echo'])
-    else:
-        data = {
-            'Status': 'Bad',
-            'Error': 'Unknown user',
-        }
-        return JsonResponse(data=data)
+                return HttpResponse(request.GET['zd_echo'])
 
