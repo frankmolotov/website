@@ -47,7 +47,7 @@ class MySpider(Spider):
             for name, value in items:
                 self.headers['Cookie'] += name + '=' + value + '; '
             grab.go('http://www.genevaoption.com/back.php/back/connection/form')
-            grab.doc.set_input_by_id('inputUsernameEmail', 'IncomingCallsBot')
-            grab.doc.set_input_by_id('inputPassword', 'Incoming1@Calls&3Bot*16')
+            grab.doc.set_input_by_id('inputUsernameEmail', '')
+            grab.doc.set_input_by_id('inputPassword', '')
             grab.submit()
         return grab
