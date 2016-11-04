@@ -50,3 +50,4 @@ def zadarma(request):
             if request.GET['zd_echo'] is not None:
                 return HttpResponse(request.GET['zd_echo'])
 
+
